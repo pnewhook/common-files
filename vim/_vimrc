@@ -1,3 +1,4 @@
+" vundle settings
 set nocompatible              " be iMproved, required
 filetype off                  " required
 
@@ -29,9 +30,16 @@ filetype plugin indent on    " required
 " Put your non-Plugin stuff after this line
 
 colorscheme pyte
+" show line numbers
 set number
+" copy to the system clipboard (?)
 set clipboard=unnamed
+" set the current directory to whatever file is open
 set autochdir
 syntax on
 set ignorecase
 
+" remappings
+nnoremap d "_d
+vnoremap d "_d
+vnoremap p "_dP
